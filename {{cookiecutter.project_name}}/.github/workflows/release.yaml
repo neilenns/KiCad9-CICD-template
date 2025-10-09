@@ -24,7 +24,7 @@ env:
 
 {% raw %}
 jobs:
-  Fabrication and documentation:
+  FabricationAndDocumentation:
     runs-on: ubuntu-latest
     container: ghcr.io/neilenns/kicad:latest
     defaults:
