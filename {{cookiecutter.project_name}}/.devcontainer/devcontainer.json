@@ -1,0 +1,10 @@
+{
+  "name": "{{cookiecutter.project_name}} development container",
+  "image": "ghcr.io/neilenns/kicad:latest",
+  "features": {
+    "ghcr.io/neilenns/devcontainer-features/oh-my-zsh:1": {
+      "stripWorkspacesFromPrompt": true
+    },
+    "ghcr.io/stuartleeks/dev-container-features/shell-history:0": {}
+  }
+}

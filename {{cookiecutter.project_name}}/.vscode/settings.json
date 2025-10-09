@@ -1,0 +1,7 @@
+{
+  "files.exclude": {
+    "*-backups/": true,
+    "fp-info-cache": true,
+    "*.kicad_prl": true
+  }
+}

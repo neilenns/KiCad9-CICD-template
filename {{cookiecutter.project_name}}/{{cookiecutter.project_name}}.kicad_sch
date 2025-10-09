@@ -1,0 +1,296 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "2d3a7c7c-6b11-479e-a93f-d6ace336c1fb")
+	(paper "USLetter")
+	(title_block
+		(title "${PROJECTNAME}")
+		(date "${DATE}")
+		(rev "${VERSION}")
+	)
+	(lib_symbols
+		(symbol "PCM_JLCPCB-Manufacturing:Tooling Hole, PCM_JLCPCB, 1.152mm"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 1.778 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "PCM_JLCPCB:Hole_Tooling_JLCPCB"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://jlcpcb.com/help/article/How-to-add-tooling-holes-for-PCB-assembly-order"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "1. Two or three tooling holes should be added on the PCB, they should be placed in opposite corners of the PCB and as far apart from one another as practical. 2. Tooling holes should be 1.152mm(45.4mil) round non-plated holes with 0.148mm solder mask expansion. 3. Tooling holes are only required for PCB assembly orders. 4. Please try to add tooling holes on empty space and keep them away from traces. If there is no enough room, you can add them to the copper area."
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Tooling Hole, PCM_JLCPCB, 1.152mm_0_1"
+				(circle
+					(center 0 0)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(rectangle
+		(start 13.97 16.51)
+		(end 36.83 22.86)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 10e68342-b922-4fcb-bc97-d1a55727aab6)
+	)
+	(text "Tooling holes"
+		(exclude_from_sim no)
+		(at 20.066 14.986 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b9b46c36-0525-420a-bd79-ff57a5cb3f27")
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Manufacturing:Tooling Hole, PCM_JLCPCB, 1.152mm")
+		(at 30.48 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "35ae03d3-8699-468e-95f9-b970287a3e36")
+		(property "Reference" "H3"
+			(at 31.75 19.0499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 31.75 21.5899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:Hole_Tooling_JLCPCB"
+			(at 30.48 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/help/article/How-to-add-tooling-holes-for-PCB-assembly-order"
+			(at 30.48 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1. Two or three tooling holes should be added on the PCB, they should be placed in opposite corners of the PCB and as far apart from one another as practical. 2. Tooling holes should be 1.152mm(45.4mil) round non-plated holes with 0.148mm solder mask expansion. 3. Tooling holes are only required for PCB assembly orders. 4. Please try to add tooling holes on empty space and keep them away from traces. If there is no enough room, you can add them to the copper area."
+			(at 30.48 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/2d3a7c7c-6b11-479e-a93f-d6ace336c1fb"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Manufacturing:Tooling Hole, PCM_JLCPCB, 1.152mm")
+		(at 16.51 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "70dbfbf4-901b-4a67-9f5c-d14049065f93")
+		(property "Reference" "H1"
+			(at 17.78 19.0499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 17.78 21.5899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:Hole_Tooling_JLCPCB"
+			(at 16.51 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/help/article/How-to-add-tooling-holes-for-PCB-assembly-order"
+			(at 16.51 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1. Two or three tooling holes should be added on the PCB, they should be placed in opposite corners of the PCB and as far apart from one another as practical. 2. Tooling holes should be 1.152mm(45.4mil) round non-plated holes with 0.148mm solder mask expansion. 3. Tooling holes are only required for PCB assembly orders. 4. Please try to add tooling holes on empty space and keep them away from traces. If there is no enough room, you can add them to the copper area."
+			(at 16.51 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/2d3a7c7c-6b11-479e-a93f-d6ace336c1fb"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Manufacturing:Tooling Hole, PCM_JLCPCB, 1.152mm")
+		(at 22.86 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "89c36961-f6ec-4f45-85f8-eab326df9496")
+		(property "Reference" "H2"
+			(at 24.13 19.0499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 24.13 21.5899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:Hole_Tooling_JLCPCB"
+			(at 22.86 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/help/article/How-to-add-tooling-holes-for-PCB-assembly-order"
+			(at 22.86 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1. Two or three tooling holes should be added on the PCB, they should be placed in opposite corners of the PCB and as far apart from one another as practical. 2. Tooling holes should be 1.152mm(45.4mil) round non-plated holes with 0.148mm solder mask expansion. 3. Tooling holes are only required for PCB assembly orders. 4. Please try to add tooling holes on empty space and keep them away from traces. If there is no enough room, you can add them to the copper area."
+			(at 22.86 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/2d3a7c7c-6b11-479e-a93f-d6ace336c1fb"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
