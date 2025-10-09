@@ -96,7 +96,7 @@ jobs:
 
       - name: JLCPCB - Zip upload file
         run: |
-          cd ${{ env.outputFolder}}/JLCPCB
+          cd "${{ env.outputFolder }}/JLCPCB"
           zip -r "../${{ env.projectName }}-JLCPCB.zip" .
           cd ..
           rm -rf JLCPCB
@@ -140,5 +140,5 @@ jobs:
         uses: actions/upload-artifact@v4
         if: ${{ !startsWith(github.ref, 'refs/tags/') }}
         with:
-          path: ${{ env.outputFolder }}/
+          path: "${{ env.outputFolder }}/"
 {% endraw %}
