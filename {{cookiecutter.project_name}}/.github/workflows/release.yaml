@@ -70,7 +70,7 @@ jobs:
       - name: Update project variables
         uses: restackio/update-json-file-action@2.1
         with:
-          file: ${{ env.projectName }}.kicad_pro
+          file: "${{ env.projectName }}.kicad_pro"
           fields: '{"text_variables.DATE": "${{ env.DATE }}", "text_variables.VERSION": "${{ env.version }}"}'
 
       # ------------------------------
@@ -81,7 +81,7 @@ jobs:
       - name: Run KiCad jobset
         run: |
           mkdir -p release/JLCPCB
-          kicad-cli jobset run --file jobs.kicad_jobset ${{ env.projectName }}.kicad_pro
+          kicad-cli jobset run --file jobs.kicad_jobset "${{ env.projectName }}.kicad_pro"
 
       # ------------------------------
       # --- JLCPCB submissions cleanup
@@ -92,12 +92,12 @@ jobs:
         run: >
           sed -i 
           's/Ref,Val,Package,PosX,PosY,Rot,Side/Designator,Val,Package,Mid X,Mid Y,Rotation,Layer/'
-          ${{ env.outputFolder }}/JLCPCB/${{ env.projectName }}-all-pos.csv
+          "${{ env.outputFolder }}/JLCPCB/${{ env.projectName }}-all-pos.csv"
 
       - name: JLCPCB - Zip upload file
         run: |
-          cd ${{ env.outputFolder}}/JLCPCB
-          zip -r ../${{ env.projectName }}-JLCPCB.zip .
+          cd "${{ env.outputFolder }}/JLCPCB"
+          zip -r "../${{ env.projectName }}-JLCPCB.zip" .
           cd ..
           rm -rf JLCPCB
 
@@ -131,14 +131,14 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           files: |
-            ${{ env.outputFolder }}/${{ env.projectName }}-schematic.pdf
-            ${{ env.outputFolder }}/${{ env.projectName }}-documentation.zip
-            ${{ env.outputFolder }}/${{ env.projectName }}-JLCPCB.zip
+            "${{ env.outputFolder }}/${{ env.projectName }}-schematic.pdf"
+            "${{ env.outputFolder }}/${{ env.projectName }}-documentation.zip"
+            "${{ env.outputFolder }}/${{ env.projectName }}-JLCPCB.zip"
 
       # Attach the artifacts to the workflow run if this is not a release.
       - name: Attach artifacts
         uses: actions/upload-artifact@v4
         if: ${{ !startsWith(github.ref, 'refs/tags/') }}
         with:
-          path: ${{ env.outputFolder }}/
+          path: "${{ env.outputFolder }}/"
 {% endraw %}
