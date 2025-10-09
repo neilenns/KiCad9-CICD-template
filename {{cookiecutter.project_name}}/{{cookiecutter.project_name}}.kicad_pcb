@@ -10,7 +10,7 @@
 	(title_block
 		(title "${PROJECTNAME}")
 		(date "${DATE}")
-		(rev "${REVISION}")
+		(rev "${VERSION}")
 	)
 	(layers
 		(0 "F.Cu" signal)
