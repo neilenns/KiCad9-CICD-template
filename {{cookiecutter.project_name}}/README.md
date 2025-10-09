@@ -12,3 +12,10 @@ kicad-cli jobset run --file jobs.kicad_jobset "{{ cookiecutter.project_name }}.k
 Note that the output will not include the post-processing steps done by the GitHub workflow to prepare the BOM and POS files for JLCPCB.
 
 After a release the repo will be updated with top and bottom board images in the `docs/` folder. These can be inserted into the `README.md` if desired.
+
+## Variables
+
+The following variables are available for use in the project:
+
+- `VERSION`: The version of the project, pulled from the GitHub release version and short SHA hash.
+- `DATE`: The date of the release in YYYY-MM-DD format.
