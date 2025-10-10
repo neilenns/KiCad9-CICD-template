@@ -144,6 +144,7 @@
 		(path "/89c36961-f6ec-4f45-85f8-eab326df9496")
 		(sheetname "/")
 		(sheetfile "{{cookiecutter.project_name}}.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_text user "${REFERENCE}"
 			(at 0 2.5 0)
 			(unlocked yes)
@@ -270,6 +271,7 @@
 		(path "/35ae03d3-8699-468e-95f9-b970287a3e36")
 		(sheetname "/")
 		(sheetfile "{{cookiecutter.project_name}}.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_text user "${REFERENCE}"
 			(at 0 2.5 0)
 			(unlocked yes)
@@ -396,6 +398,7 @@
 		(path "/70dbfbf4-901b-4a67-9f5c-d14049065f93")
 		(sheetname "/")
 		(sheetfile "{{cookiecutter.project_name}}.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_text user "${REFERENCE}"
 			(at 0 2.5 0)
 			(unlocked yes)
