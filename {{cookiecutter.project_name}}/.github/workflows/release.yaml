@@ -90,7 +90,7 @@ jobs:
       # Generate the output files and clean up the output for zipping
       - name: JLCPCB - generate output
         run: |
-          python3 -m com_github_bennymeg_JLC-Plugin-for-KiCad.cli -p "${{ env.projectName }}.kicad_pcb"
+          python3 -m com_github_bennymeg_JLC-Plugin-for-KiCad.cli --excludeDNP -p "${{ env.projectName }}.kicad_pcb"
           rm -rf "production/backups"
           mkdir -p ${{ env.outputFolder }}/JLCPCB
           mv production/* ${{ env.outputFolder }}/JLCPCB
