@@ -23,6 +23,7 @@ fp-info-cache
 \#auto_saved_files#
 fp-info-cache
 production
+release
 
 # Netlist files (exported from Eeschema)
 *.net
