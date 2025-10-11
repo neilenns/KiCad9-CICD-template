@@ -171,7 +171,7 @@
       "description": "Render interactive BOM",
       "id": "8a39e2a2-c1cd-4aac-9be9-1e16d94625ac",
       "settings": {
-        "command": "python3 -m com_github_openscopeproject_InteractiveHtmlBom.generate_interactive_bom --dest-dir \"${JOBSET_OUTPUT_WORK_PATH}\" \"${PROJECTNAME}.kicad_pcb\"",
+        "command": "xvfb-run --auto-servernum --server-args \"-screen 0 1024x768x24\" python3 -m com_github_openscopeproject_InteractiveHtmlBom.generate_interactive_bom --no-browser --dest-dir \"${JOBSET_OUTPUT_WORK_PATH}\" \"${PROJECTNAME}.kicad_pcb\"",
         "description": "",
         "ignore_exit_code": false,
         "output_filename": "",
