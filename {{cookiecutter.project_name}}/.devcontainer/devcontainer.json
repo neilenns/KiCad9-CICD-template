@@ -6,8 +6,5 @@
       "stripWorkspacesFromPrompt": true
     },
     "ghcr.io/stuartleeks/dev-container-features/shell-history:0": {}
-  },
-  "containerEnv": {
-    "INTERACTIVE_HTML_BOM_NO_DISPLAY": "true"
   }
 }
