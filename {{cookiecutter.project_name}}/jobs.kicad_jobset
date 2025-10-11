@@ -171,10 +171,10 @@
       "description": "Render interactive BOM",
       "id": "8a39e2a2-c1cd-4aac-9be9-1e16d94625ac",
       "settings": {
-        "command": "python3 -m com_github_openscopeproject_InteractiveHtmlBom.generate_interactive_bom --dest-dir release \"${PROJECTNAME}.kicad_pcb\"",
+        "command": "python3 -m com_github_openscopeproject_InteractiveHtmlBom.generate_interactive_bom --dest-dir \"${JOBSET_OUTPUT_WORK_PATH}\" \"${PROJECTNAME}.kicad_pcb\"",
         "description": "",
         "ignore_exit_code": false,
-        "output_filename": "ibom.html",
+        "output_filename": "",
         "record_output": true
       },
       "type": "special_execute"
